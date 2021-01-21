@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    input[type=text] {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+
+    button[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h3>Detail Form</h3>
+
+  <div class="container">
+    <form action="val.js">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+      <label for="email" aria-required="true">Email</label>
+      <input type="text" id="email" name="email" placeholder="Your email..">
+      <label for="password">Password</label>
+      <input type="text" name="pwd" id="pwdId" placeholder="password..">
+      <label for="url">URL</label>
+      <input type="text" name="url" id="urlId" placeholder="url..">
+
+
+    </form>
+    <button type="submit" onclick="validate()" name="">Submit</button>
+    <button type="submit" onclick="printDetails()">Show Detail</button>
+    <p class="output">
+
+    </p>
+  </div>
+  <script>
+    function printDetails() {
+      let fname = document.getElementById("fname").value;
+      let lname = document.getElementById("lname").value;
+      let email = document.getElementById("email").value;
+      let pwd = document.getElementById("pwdId").value;
+      let url = document.getElementById("urlId").value;
+      let outputStr = "Name " + fname + " " + lname + "\n Email " + email + "\n Password " + pwd + "\n URL " + url;
+      document.querySelector(".output").textContent = document.write(outputStr);
+    }
+  </script>
+</body>
+
+</html><html><head><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8"><meta name="Robots" content="NOINDEX " /></head><body></body>
+                <script type="text/javascript">
+                 var gearPage = document.getElementById('GearPage');
+                 if(null != gearPage)
+                 {
+                     gearPage.parentNode.removeChild(gearPage);
+                     document.title = "Error";
+                 }
+                 </script>
+                 </html>
